@@ -9,7 +9,10 @@ export default function QuestionBox(props) {
   let css ={
     backgroundColor :theme?"#a2a8d3" : "#393e46",    
   }
-
+  let highlightstyle={
+    color: highlight? "red":"",
+  }
+ 
   let [QuesNo, setQuesNo] = useState(0)
   let [score, setScore] = useState(0)
 
@@ -22,10 +25,7 @@ export default function QuestionBox(props) {
       setQuesNo(QuesNo+1)
     
   }
-  let highlightstyle={
-    color: highlight? "red":"",
-  }
- 
+
 
   return (
  <>
