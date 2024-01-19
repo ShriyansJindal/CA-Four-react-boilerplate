@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+.container{
+    transition: all linear .5s;
+}
 .header{
     /* border: 2px solid black; */
     display: flex;

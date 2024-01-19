@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import QuestionBox from './QuestionBox'
-import App from '../App'
+
 import { Startbox } from './Startbox'
+import questions from '../questions'
 
 export default function Result(props) {
   // STORING SCORE AND CURRENT THEME
@@ -18,6 +18,7 @@ export default function Result(props) {
   }
   // console.log(result)
   // console.log(result)
+
 
   return (
     <>

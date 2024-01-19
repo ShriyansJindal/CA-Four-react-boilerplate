@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
-import questions from "./questions";
-import Result from "./components/Result";
 import QuestionBox from "./components/QuestionBox";
 import { MdOutlineLightMode } from "react-icons/md";
 import { MdDarkMode } from "react-icons/md";
 import { Startbox } from "./components/Startbox";
-
-
 
 function App() {
   // FOR CHANGING THE THEME
@@ -18,9 +14,6 @@ function App() {
     color:theme?"black" : "white",
     width:"100vw",
     height:"100vh"
-  }
-  let css ={
-    backgroundColor :theme?"#a2a8d3" : "#393e46",    
   }
   let handleTheme=()=>{
     setTheme(!theme)
@@ -33,12 +26,6 @@ function App() {
       <button onClick={handleTheme} className="themeBtn">{theme===true ?(<MdDarkMode />):(<MdOutlineLightMode />)}</button>
       </div>
       {start ? (<QuestionBox props ={[theme,0]}/>):(<Startbox props={theme}/>)}
-      {/* {start ? (<QuestionBox props ={[theme,0]}/>):(<div className="main" style={css}>
-        <h1>QuizzGame</h1>
-        <button className="start" onClick={()=>setStart(!start)}>Start Game</button>
-      </div>)} */}
-
-      {/* <QuestionBox props ={[theme,0]}/> */}
     </div>
   );
 }
