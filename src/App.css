@@ -2,6 +2,7 @@
 .container{
     transition: all linear .5s;
 }
+/* NAVBAR */
 .header{
     /* border: 2px solid black; */
     display: flex;
@@ -10,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
 }
+/* TOGGLE BTN FOR THEME */
 .themeBtn{
     /* height: fit-content; */
     padding: 10px 35px;
@@ -19,6 +21,36 @@
     font-size: 25px;
 
 }
+/* CONTAINER OF START GAME BUTTON */
+.main{
+    box-shadow: 0px 0px 10px 0px ;
+    width: 40vw;
+    margin:100px auto;
+    text-align: center;
+    max-height: 400px;
+    padding: 50px;
+}
+.main h1{
+    font-size: 50px;
+    font-family: "Lemon", serif;
+    /* color: #e7eaf6; */
+}
+/* START GAME BUTTON */
+.start{
+    margin-top: 50px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px 0px ;
+    border: none;
+    font-size: 25px;
+    /* background-color: rgb(204, 195, 241); */
+    transition: all linear .5s;
+}
+.start:active{
+    /* box-shadow: none; */
+    transform: scale(0.9);
+}
+/* CONTAINER FOR QUES AND ANSWERS */
  .quesBox{
     padding: 40px 0px;
     /* border: 2px solid red;  */
@@ -29,6 +61,7 @@
     margin-top: 30px ;
     text-align: center;  
 }  
+/* OPTIONS BUTTON OF QUESTION */
 .options{
     display: block;
     padding: 14px;
@@ -53,10 +86,23 @@
 ::selection{
     color: orange;
 }
-
+/* CONTAINER FOR OPTIONS BUTTONS */
 .optbox{
     text-align: center;
 }
+/* BUTTONS FOR HIGHLIGHT QUES */
+.highlightbtn{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    margin:15px 5px;
+    border: 1px solid ;
+}
+.highlightbtn:hover{
+    border: 2px solid ;
+}
+
+/* RESULT BOX */
 .resultBox{
     border-radius: 10px;
     /* border: 2px solid green; */
@@ -67,50 +113,9 @@
     text-align: center;
     padding: 50px;
 }
+/* RESTART BUTTON */
 .restart{
     padding: 15px 25px;
     border-radius: 30px;
 }
-.highlightbtn{
-    padding: 10px 15px;
-    border-radius: 20px;
-    border: none;
-    margin:15px 5px;
-    border: 1px solid ;
-}
 
-.highlightbtn:hover{
-    border: 2px solid ;
-}
-
-
-
-
-.main{
-    box-shadow: 0px 0px 10px 0px ;
-    width: 40vw;
-    margin:100px auto;
-    text-align: center;
-    max-height: 400px;
-    padding: 50px;
-}
-.main h1{
-    font-size: 50px;
-    font-family: "Lemon", serif;
-    /* color: #e7eaf6; */
-}
-
-.start{
-    margin-top: 50px;
-    padding: 20px 30px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 7px 0px ;
-    border: none;
-    font-size: 25px;
-    /* background-color: rgb(204, 195, 241); */
-    transition: all linear .5s;
-}
-.start:active{
-    /* box-shadow: none; */
-    transform: scale(0.9);
-}

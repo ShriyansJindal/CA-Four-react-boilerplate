@@ -9,8 +9,10 @@ export const Startbox = (props) => {
       }
   return (
     <div>
+      {/* CHECK IF START BUTTON IS CLICKED OR NOT */}
       {start ? (<QuestionBox props ={[theme,0]}/>):(<div className="main" style={css}>
         <h1>QuizzGame</h1>
+        {/* Start button */}
         <button className="start" onClick={()=>setStart(!start)}>Start Game</button>
       </div>)}
   </div>

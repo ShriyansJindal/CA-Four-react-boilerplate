@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import questions from '../questions'
 import Result from './Result'
 
@@ -6,6 +6,7 @@ export default function QuestionBox(props) {
   // for checking the theme
   let theme = props.props[0]
   let [highlight,sethighlight]=useState(false)
+
   // for storing the ques number and player score
   let [QuesNo, setQuesNo] = useState(props.props[1])
   let [score, setScore] = useState(0)
@@ -18,11 +19,12 @@ export default function QuestionBox(props) {
     backgroundColor :theme?"white" : "#393e46", 
     color :theme? "black" :"white", 
   }
+
   // CSS TO HIGHLIGHT QUESTION
   let highlightstyle={
     color: highlight? "red":"",
   }
-
+  
   // UPDATING THE SCORES
   let handleOptions=(e)=>{
     // console.log(e.target.value)
